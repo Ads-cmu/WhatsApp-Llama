@@ -75,7 +75,7 @@ if __name__ == "__main__":
 	with open(input_folder_path+'/'+friend_name+'Chat.txt', encoding="utf-8") as f:
 		lines = f.readlines()
 
-	regex = r"\s?\[\d{1,2}\/\d{1,2}\/\d{2,4}\, \d{1,2}:\d{1,2}:\d{1,2}\s[APM]{2}\]\s" #remove timestamps
+	regex = r"\d{2}/\d{2}/\d{2}, \d{1,2}:\d{2}\s*(am|pm)\s*-\s*" #remove timestamps
 
 	dataset = []
 
